@@ -31,6 +31,7 @@ setup(name='Flask cli',
       author_email='struts2spring@gmail.com',
       url='https://github.com/struts2spring/flask_cli',
       zip_safe=False,
+      platforms='any',
       packages=['src', ],
       classifiers=[
         "Programming Language :: Python",
@@ -44,10 +45,10 @@ setup(name='Flask cli',
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Topic :: cli (commond line interface) :: cli",
         ],
-      install_requires=[],
+      install_requires=['Click',],
       scripts=[],
       entry_points={
-            'console_scripts':['fl = src.main:run']
+            'console_scripts':['fl = src.main:cli']
       },
 
       
