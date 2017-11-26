@@ -1,5 +1,5 @@
 from distutils.core import setup
-
+import re
 
 def find_version(fname):
     '''Attempts to find the version number in the file names fname.
@@ -17,7 +17,7 @@ def find_version(fname):
         raise RuntimeError('Cannot find version information')
     return version
 
-__version__ = find_version('flask_cli/__init__.py')
+__version__ = find_version('src/__init__.py')
 
 with open("README.md") as f:
       long_description=f.read()
