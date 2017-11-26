@@ -15,7 +15,7 @@ Navigate to http://localhost:5000/ .
 You can configure the default HTTP host and port used by the development server with two command-line options :
 
 ```bash
-ng serve --host 0.0.0.0 --port 5001
+flask start --host 0.0.0.0 --port 5001
 ```
 
 # flask start
