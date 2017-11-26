@@ -45,7 +45,7 @@ setup(name='Flask cli',
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Topic :: cli (commond line interface) :: cli",
         ],
-      install_requires=['Click',],
+      install_requires=['Click','colorama'],
       scripts=[],
       entry_points={
             'console_scripts':['fl = src.main:cli']
